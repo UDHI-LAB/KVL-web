@@ -1,0 +1,87 @@
+/*基準サイズ(横幅1000pxで1文字16pxになる)*/
+html{
+    font-size: 1.6vw;
+}
+/*全体の位置調整*/
+body{
+    margin: 20px;
+    padding: 30px 10px 30px 10px;
+  }
+
+.wrapper{
+    max-width: 100%;
+    margin: 0 auto 60px; /*中央に配置*/
+    padding: 0 4%; /*スマホ向けの調整*/
+}
+
+/*ページ内リンクのずれ補正用*/
+.content{
+    margin-top: -30px;
+    padding-top: 30px;
+}
+/*見出しのサイズ*/
+.content h2{
+    padding-left: 4%;
+    font-size: 2rem;
+}
+
+.article{
+    min-width: 52%;
+    background: #eee;
+    padding: 0 20px;
+    vertical-align: center;
+}
+.article h3{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+.article p{
+    margin-top: 3vh;
+    font-size: 1.15rem;
+}
+
+.introduction{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*---------- スライダーの各種設定 ----------*/
+
+/*スライダーの幅調整*/
+.slider{
+    max-width: 32%;
+    margin:45px;
+}
+
+/*------ スライダー画像 ------*/
+.slick-slide img{
+    width: 100%;
+    max-height: 45vw;
+    object-fit: cover;
+}
+
+/*-------- 高さ調整 ----------*/
+.slick-slide{
+    height:auto!important;
+}
+/*---------- ドット ----------*/
+.slick-dots li {
+	width: 10px;
+    bottom: 10px;
+}
+/*----------- 矢印 -----------*/
+.slick-next{
+    right:0!important;
+}
+.slick-prev{
+    left:0!important;
+}
+.slick-arrow{
+    width: initial!important;
+    height: initial!important;
+    z-index:2!important;
+}
+.slick-arrow:before{
+    font-size: 30px!important;
+}
