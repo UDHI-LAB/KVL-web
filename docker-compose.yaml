@@ -7,7 +7,7 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - ./node/:/usr/src/app
+      - ./doc/:/usr/src/app
     command: >
       bash -c "npm install &&
       npm install nodemon -g &&
