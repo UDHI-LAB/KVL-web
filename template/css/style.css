@@ -1,0 +1,391 @@
+html{
+    font-size: 1.6vw;/*基準サイズ(横幅1000pxで1文字16pxになる)*/
+    scroll-padding-top: 55px;/*ページ内リンクのずれ補正用*/
+}
+
+/*位置調整*/
+body{
+    margin: 0;
+}
+.contents{
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+/*コンテンツの位置調整用*/
+.content{
+    padding-top: 15px;
+}
+.wrapper{
+    max-width: 80%;
+    margin: 5% auto 0; /*中央に配置*/
+    padding: 0 4%; /*スマホ向けの調整*/
+}
+.gray{
+    background: #ccc;
+    padding-bottom: 30px;
+}
+/*見出しのサイズと位置*/
+.content h2{
+    margin-top: 0;
+    padding-left: 10%;
+    font-size: 2rem;
+}
+
+.text{
+    background: #eee;
+    padding: 0 20px;
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+/*----- content#01 -----*/
+.info.wrapper{
+    margin-top: 0;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+.date h2{
+    padding: 0;
+    margin: 0;
+}
+.date p{
+    margin: 0;
+    font-size: 1.3rem;
+}
+.info h3{
+    background: #fff;
+    padding: 10px 30px;
+    text-align: center;
+    width: fit-content;
+    vertical-align: middle;
+}
+.info small{
+    font-size: 0.9rem;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+}
+.row h2{
+    font-size: 1.5rem;
+    margin: 0;
+
+}
+.info i{
+    color: #000;
+}
+/*----- content#02 -----*/
+.box{
+    position: relative;
+    width: 100%;
+    height: 50vw;
+    margin: 0 auto;
+}
+.left{
+    position: absolute;
+    min-width: 52%;
+    height: 35vw;
+    bottom: 28%;
+    left: 5%;
+}
+.right{
+    position: absolute;
+    width: 52%;
+    bottom: 12%;
+    right: 5%;
+    text-align: center;
+}
+.box .text{
+    padding: 20px 0;
+}
+
+/*----- content#03 -----*/
+.text.club-introduction{
+    background: #fff;
+    max-width: 70%;
+    margin: 0 auto 30px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+}
+.club-introduction img{
+    max-width: 3vw;
+    max-height: 3vw;
+    vertical-align: middle;
+    margin: 0 0.5% 0 0.2%;
+
+}
+.club-introduction h3{
+    font-size: 1.15rem;
+    padding: 20px 0 0;
+}
+.site-link{
+    background: #555;
+    color: #fff;
+    text-align: left;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 10px 0;
+}
+.site-link:hover{
+    background: #444;
+    cursor: pointer;
+}
+
+/*----- content#04 -----*/
+.development-introduction .text{
+    min-width: 52%;
+}
+.development-introduction .text h3{
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+.development-introduction .text p{
+    margin-top: 3vh;
+}
+.development-introduction{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+/*----- content#05 -----*/
+.others{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 1% 40px;
+}
+.others p{
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+.sns{
+    width:25%;
+    padding-bottom: 3%;
+    margin: 0;
+}
+.sns iframe{
+    width: 100% !important;
+}
+.poster{
+    width: 50%;
+    margin: 0;
+}
+.poster img{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*---------- ヘッダーの各種設定 ----------*/
+
+/*ヘッダーの位置等調整*/
+header {
+    position: absolute;
+    z-index: 9999;
+}
+.header-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding:10px 0;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+  
+/*ヘッダーロゴの位置調整*/
+.header-logo{
+    text-align:left;
+    font-size: 20px;
+    margin:0 20px;
+    color: #000;
+    text-decoration: none;
+}
+.header-logo h3{
+    margin: 0;
+}
+    
+/*チェックボックスを非表示にする*/
+.nav-unshown {
+    display:none;
+}
+    
+/*ハンバーガーアイコンの設置スペース*/
+ #nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+    
+/*ハンバーガーメニューの3本線*/
+#nav-open span,
+#nav-open span:before,
+#nav-open span:after {
+    position: absolute;
+    height: 3px;/*線の太さ*/
+    width: 25px;/*長さ*/
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    cursor: pointer;
+}
+#nav-open span:before {
+    bottom: -8px;
+}
+#nav-open span:after {
+    bottom: -16px;
+}
+  
+/*薄暗い箇所、押したらメニューを閉じる*/
+#nav-close {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+  
+/*メニューの中身*/
+#nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 90%;
+    max-width: 330px;
+    height: 100%;
+    background: #fff;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(105%);
+    transform: translateX(105%);
+}
+.nav-list{
+    list-style: none;
+    padding: 0 20px;
+}
+.nav-item{
+    margin-top: 20px;
+    border-bottom: 1px #ddd solid;
+}
+.nav-item a{
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+/*カーソルを置いたときに色を変える*/
+.nav-item a:hover{
+    color: #235BC8;
+}
+    
+/*チェックがついたら表示させる*/
+#nav-input:checked ~ #nav-close {
+    display: block;
+    opacity: .5;
+} 
+#nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+/*---------- スライダーの各種設定 ----------*/
+
+/*スライダーの幅調整*/
+.slider{
+    max-width: 32%;
+    margin:45px;
+}
+
+/*------ スライダー画像 ------*/
+.slick-slide img{
+    width: 100%;
+    max-height: 45vw;
+    object-fit: cover;
+}
+
+/*-------- 高さ調整 ----------*/
+.slick-slide{
+    height:auto!important;
+}
+/*---------- ドット ----------*/
+.slick-dots li {
+	width: 10px;
+    bottom: 10px;
+}
+/*----------- 矢印 -----------*/
+.slick-next{
+    right:0!important;
+}
+.slick-prev{
+    left:0!important;
+}
+.slick-arrow{
+    width: initial!important;
+    height: initial!important;
+    z-index:2!important;
+}
+.slick-arrow:before{
+    font-size: 30px!important;
+}
+
+/*---------- フッターの各種設定 ----------*/
+
+/*フッターの位置等調整*/
+footer {
+    width: 100%;
+    background: #555;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 2vw;
+}
+footer h1{
+    margin: 0;
+    padding-top: 4.5%;
+}
+footer p{
+    margin: 1.25%;
+}
+footer img{
+    max-width: 2.2vw;
+    max-height: 2.2vw;
+    vertical-align: middle;
+    margin: 0 0.5% 0 0.2%;
+}
+.twitter-box{
+    background: #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto;
+}
+.lab{
+    color: #555;
+    margin: 0.25rem;
+    font-size: 2rem;
+    border-radius: 0%;
+}
+.twitter-box:hover{
+    cursor: pointer;
+}
