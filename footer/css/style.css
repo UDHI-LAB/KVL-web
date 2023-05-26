@@ -1,0 +1,54 @@
+/*基準サイズ(横幅1000pxで1文字16pxになるよう調整)*/
+html{
+    font-size: 1.6vw;
+    scroll-padding-top: 55px;/*ページ内リンクのずれ補正用*/
+}
+/*全体の位置調整*/
+body{
+    margin: 0;
+  }
+
+  .wrapper{
+    max-width: 80%;
+    margin: 5% auto 0; /*中央に配置*/
+    padding: 0 4%; /*スマホ向けの調整*/
+}
+/*---------- フッターの各種設定 ----------*/
+
+/*フッターの位置等調整*/
+footer {
+    width: 100%;
+    background: #555;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 2vw;
+}
+footer h1{
+    margin: 0;
+    padding-top: 4.5%;
+}
+footer p{
+    margin: 1.25%;
+}
+footer img{
+    max-width: 2.2vw;
+    max-height: 2.2vw;
+    vertical-align: middle;
+    margin: 0 0.5% 0 0.2%;
+}
+.twitter-box{
+    background: #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto;
+}
+.lab{
+    color: #555;
+    margin: 0.25rem;
+    font-size: 2rem;
+    border-radius: 0%;
+}
+.twitter-box:hover{
+    cursor: pointer;
+}
