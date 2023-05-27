@@ -9,11 +9,11 @@ body{
 }
 /*一番上のコンテンツがヘッダーと被らないように調整*/
 .contents{
-    padding-top: 30px;
+    padding-top: 50px;
 }
 /*コンテンツの位置調整用*/
 .content{
-    padding-top: 15px;
+    padding-top: 1.5vw;
 }
 /*余白をつけ、中央に配置*/
 .wrapper{
@@ -24,18 +24,18 @@ body{
 /*背景をグレーにする*/
 .gray{
     background: #ccc;
-    padding-bottom: 30px;
+    padding-bottom: 3vw;
 }
 /*見出しのサイズと位置*/
 .content h2{
-    margin-top: 10px;
+    margin: 1vw 0;
     padding-left: 10%;
     font-size: 2rem;
 }
 /*テキストボックスの基本設定*/
 .text{
     background: #eee;
-    padding: 0 20px;
+    padding: 0 1vw;
     vertical-align: middle;
     font-size: 1.2rem;
 }
@@ -66,7 +66,7 @@ body{
 }
 .top h4{
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin-top: 1vw;
 }
 .top h1{
     margin-top: 4.5vw;
@@ -80,8 +80,7 @@ body{
 .info{
     display: grid;/*グリッドで配置*/
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-
+    gap: 3%;
 }
 /*文字の位置等調整*/
 .date h2{
@@ -94,7 +93,7 @@ body{
 }
 .info h3{
     background: #fff;
-    padding: 10px 30px;
+    padding: 1vw 3vw;
     text-align: center;
     width: fit-content;
     vertical-align: middle;
@@ -104,7 +103,7 @@ body{
 }
 .row{
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.2fr;
     align-items: center;
 }
 .row h2{
@@ -126,7 +125,7 @@ body{
 .left{
     position: absolute;
     min-width: 52%;
-    height: 35vw;
+    height: 36vw;
     bottom: 28%;
     left: 5%;
 }
@@ -136,18 +135,16 @@ body{
     bottom: 12%;
     right: 5%;
     text-align: center;
-}
-.box .text{
-    padding: 20px 0;
+    padding: 2vw 0;
 }
 
 /*----- content#03 -----*/
 .text.club-introduction{
     background: #fff;
     max-width: 70%;
-    margin: 0 auto 30px;
-    padding-bottom: 20px;
-    font-size: 1rem;
+    margin: 0 auto 3vw;
+    padding-bottom: 3vw;
+    font-size: 1.2rem;
 }
 .club-introduction .icon{
     max-width: 3vw;
@@ -155,16 +152,16 @@ body{
 }
 .club-introduction h3{
     font-size: 1.15rem;
-    padding: 20px 0 0;
+    padding: 2vw 0 0;
 }
 .site-link{
     background: #444;
     color: #fff;
     text-align: left;
     text-decoration: none;
-    border-radius: 15px;
-    font-size: 1.1rem;
-    padding: 10px;
+    border-radius: 2vw;
+    font-size: 1rem;
+    padding: 1vw;
     margin: 10px 0;
 }
 .site-link:hover{
@@ -175,15 +172,12 @@ body{
 /*----- content#04 -----*/
 .development-introduction .text{
     width: 46%;
-    padding: 0 30px;
+    padding: 0 3vw;
 }
 .development-introduction .text h3{
-    padding-top: 20px;
-    margin: 10px 0;
+    padding-top: 2vw;
+    margin: 1vw 0;
     font-size: 1.1rem;
-}
-.development-introduction .text p{
-    margin-top: 3vh;
 }
 .development-introduction{
     display: flex;
@@ -191,7 +185,7 @@ body{
     align-items: center;
     margin-bottom: 30px;
 }
-/*frexの配置の順番*/
+/*flexの配置の順番*/
 .r{
     order: 1;
 }
@@ -207,6 +201,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: auto;
 }
 .others.wrapper{
     margin-top: 20px;
@@ -216,12 +211,12 @@ body{
     font-size: 0.8rem;
 }
 .sns{
-    max-width:40%;
+    width:40%;
     padding-bottom: 3%;
     margin: 0;
 }
 .sns iframe{
-    width: 90% !important;
+    max-width:95%;
 }
 .poster{
     max-width: 55%;
@@ -325,7 +320,7 @@ header {
 }
 .nav-list{
     list-style: none;
-    padding: 0 20px;
+    padding: 30px 20px 0;
 }
 .nav-item{
     margin-top: 20px;
@@ -358,13 +353,13 @@ header {
 
 /*スライダーの幅調整*/
 .slider{
-    margin-top: 20px;
+    margin-top: 2vw;
     max-width: 30%;
 }
 /*------ スライダー画像 ------*/
 .slick-slide img{
     width: 100%;
-    max-height: auto;
+    height: auto;
     object-fit: cover;
 }
 /*-------- 高さ調整 ----------*/
@@ -429,5 +424,75 @@ footer p{
 
 /*---------- モバイル版 ----------*/
 @media(max-width: 768px){
-
+    .wrapper{
+        max-width: 95%;
+    }
+    .content h2{
+        padding-left: 5%;
+    }
+    .date h2{
+        padding: 0;
+    }
+    .left{
+        position: static;
+        min-width: 20%;
+        max-width: 50%;
+        height: auto;
+    }
+    .right{
+        position: static;
+        width: auto;
+        min-width: 55%;
+        max-width: 100%;
+        padding: 2vw;
+    }
+    .box{
+        display: grid;
+        width: auto;
+        height: auto;
+        gap: 1.5vw;
+        justify-items: center;
+        align-items: center;
+    }
+    .text.club-introduction{
+        max-width: 90%;
+        font-size: 1rem;
+    }
+    .development-introduction{
+        flex-flow: column;
+    }
+    .development-introduction .text{
+        min-width: 65%;
+        max-width: 100%;
+    }
+    .slider{
+        max-width: 45%;
+    }
+    .l, .r{
+        order: 0;
+    }
+    .others{
+        flex-flow: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .poster{
+        max-width: 80%;
+    }
+    .sns{
+        width: 80%;
+    }
+    .sns iframe{
+        max-width:100%;
+    }
+    #nav-content{
+        width: 75%;
+    }
+    .nav-item{
+        margin: 20px;
+    }
+    .nav-item a {
+        font-size: 14px;
+        padding: 5px;
+    }
 }
