@@ -1,53 +1,89 @@
+/*共通設定*/
 html{
     font-size: 1.6vw;/*基準サイズ(横幅1000pxで1文字16pxになる)*/
     scroll-padding-top: 55px;/*ページ内リンクのずれ補正用*/
 }
-
 /*位置調整*/
 body{
     margin: 0;
 }
+/*一番上のコンテンツがヘッダーと被らないように調整*/
 .contents{
-    margin-top: 30px;
     padding-top: 30px;
 }
-
 /*コンテンツの位置調整用*/
 .content{
     padding-top: 15px;
 }
+/*余白をつけ、中央に配置*/
 .wrapper{
     max-width: 80%;
     margin: 5% auto 0; /*中央に配置*/
     padding: 0 4%; /*スマホ向けの調整*/
 }
+/*背景をグレーにする*/
 .gray{
     background: #ccc;
     padding-bottom: 30px;
 }
 /*見出しのサイズと位置*/
 .content h2{
-    margin-top: 0;
+    margin-top: 10px;
     padding-left: 10%;
     font-size: 2rem;
 }
-
+/*テキストボックスの基本設定*/
 .text{
     background: #eee;
     padding: 0 20px;
     vertical-align: middle;
     font-size: 1.2rem;
 }
+/*アイコンの基本設定*/
+.icon{
+    max-width: 2.2vw;
+    max-height: 2.2vw;
+    vertical-align: middle;
+    margin: 0 0.5% 0 0.2%;
+}
+
+/*----- content#00 -----*/
+.top{
+    display: grid;/*グリッドで配置*/
+    grid-template-columns: 1.2fr 1fr;
+    gap: 7%;
+}
+/*画像の位置等調整*/
+.top img{
+    max-width: 90%;
+    height: auto;
+}
+/*文字の位置等調整*/
+.top p{
+    margin-top: 8vw;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+.top h4{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.top h1{
+    margin-top: 4.5vw;
+    font-size: 2.75rem;
+}
+
 /*----- content#01 -----*/
 .info.wrapper{
     margin-top: 0;
 }
 .info{
-    display: grid;
+    display: grid;/*グリッドで配置*/
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 
 }
+/*文字の位置等調整*/
 .date h2{
     padding: 0;
     margin: 0;
@@ -72,13 +108,14 @@ body{
     align-items: center;
 }
 .row h2{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 0;
 
 }
 .info i{
     color: #000;
 }
+
 /*----- content#02 -----*/
 .box{
     position: relative;
@@ -112,36 +149,36 @@ body{
     padding-bottom: 20px;
     font-size: 1rem;
 }
-.club-introduction img{
+.club-introduction .icon{
     max-width: 3vw;
     max-height: 3vw;
-    vertical-align: middle;
-    margin: 0 0.5% 0 0.2%;
-
 }
 .club-introduction h3{
     font-size: 1.15rem;
     padding: 20px 0 0;
 }
 .site-link{
-    background: #555;
+    background: #444;
     color: #fff;
     text-align: left;
+    text-decoration: none;
     border-radius: 15px;
     font-size: 1.1rem;
     padding: 10px;
     margin: 10px 0;
 }
 .site-link:hover{
-    background: #444;
+    background: #555;
     cursor: pointer;
 }
 
 /*----- content#04 -----*/
 .development-introduction .text{
-    min-width: 52%;
+    width: 46%;
+    padding: 0 30px;
 }
 .development-introduction .text h3{
+    padding-top: 20px;
     margin: 10px 0;
     font-size: 1.1rem;
 }
@@ -150,30 +187,44 @@ body{
 }
 .development-introduction{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-/*----- content#05 -----*/
-.others{
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10px 1% 40px;
+    margin-bottom: 30px;
+}
+/*frexの配置の順番*/
+.r{
+    order: 1;
+}
+.l{
+    order: -1;
+}
+
+/*----- content#05 -----*/
+.bottom{
+    margin-top: 5vw;
+}
+.others{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.others.wrapper{
+    margin-top: 20px;
 }
 .others p{
     margin-top: 0;
     font-size: 0.8rem;
 }
 .sns{
-    width:25%;
+    max-width:40%;
     padding-bottom: 3%;
     margin: 0;
 }
 .sns iframe{
-    width: 100% !important;
+    width: 90% !important;
 }
 .poster{
-    width: 50%;
+    max-width: 55%;
     margin: 0;
 }
 .poster img{
@@ -202,7 +253,6 @@ header {
     background: #ccc;
     margin-bottom: 20px;
 }
-  
 /*ヘッダーロゴの位置調整*/
 .header-logo{
     text-align:left;
@@ -214,12 +264,10 @@ header {
 .header-logo h3{
     margin: 0;
 }
-    
 /*チェックボックスを非表示にする*/
 .nav-unshown {
     display:none;
-}
-    
+}   
 /*ハンバーガーアイコンの設置スペース*/
  #nav-open {
     display: inline-block;
@@ -228,7 +276,6 @@ header {
     vertical-align: middle;
     margin-right: 5px;
 }
-    
 /*ハンバーガーメニューの3本線*/
 #nav-open span,
 #nav-open span:before,
@@ -248,7 +295,6 @@ header {
 #nav-open span:after {
     bottom: -16px;
 }
-  
 /*薄暗い箇所、押したらメニューを閉じる*/
 #nav-close {
     display: none;
@@ -262,7 +308,6 @@ header {
     opacity: 0;
     transition: .3s ease-in-out;
 }
-  
 /*メニューの中身*/
 #nav-content {
     overflow: auto;
@@ -298,7 +343,6 @@ header {
 .nav-item a:hover{
     color: #235BC8;
 }
-    
 /*チェックがついたら表示させる*/
 #nav-input:checked ~ #nav-close {
     display: block;
@@ -314,17 +358,15 @@ header {
 
 /*スライダーの幅調整*/
 .slider{
-    max-width: 32%;
-    margin:45px;
+    margin-top: 20px;
+    max-width: 30%;
 }
-
 /*------ スライダー画像 ------*/
 .slick-slide img{
     width: 100%;
-    max-height: 45vw;
+    max-height: auto;
     object-fit: cover;
 }
-
 /*-------- 高さ調整 ----------*/
 .slick-slide{
     height:auto!important;
@@ -355,7 +397,7 @@ header {
 /*フッターの位置等調整*/
 footer {
     width: 100%;
-    background: #555;
+    background: #444;
     text-align: center;
     color: #fff;
     padding-bottom: 2vw;
@@ -367,12 +409,7 @@ footer h1{
 footer p{
     margin: 1.25%;
 }
-footer img{
-    max-width: 2.2vw;
-    max-height: 2.2vw;
-    vertical-align: middle;
-    margin: 0 0.5% 0 0.2%;
-}
+/*Twitterのアイコン*/
 .twitter-box{
     background: #fff;
     border-radius: 50%;
@@ -381,11 +418,16 @@ footer img{
     margin: 0 auto;
 }
 .lab{
-    color: #555;
+    color: #444;
     margin: 0.25rem;
     font-size: 2rem;
     border-radius: 0%;
 }
 .twitter-box:hover{
     cursor: pointer;
+}
+
+/*---------- モバイル版 ----------*/
+@media(max-width: 768px){
+
 }
