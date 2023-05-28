@@ -425,14 +425,38 @@ footer p{
 /*---------- モバイル版 ----------*/
 @media(max-width: 768px){
     .wrapper{
-        max-width: 95%;
+        max-width: 90%;
     }
     .content h2{
         padding-left: 5%;
+        font-size: 2.5rem;
     }
+    .icon{
+        max-width: 3.5vw;
+        max-height: 3.5vw;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+    .l, .r{
+        order: 0;
+    }
+    /*----- content#00 -----*/
+    .top p{
+        font-size: 2.4rem;
+    }
+    .top h1{
+        margin-top: 6vw;
+        font-size: 3rem;
+    }
+    .top{
+        gap: 3%;
+    }
+    /*----- content#01 -----*/
     .date h2{
         padding: 0;
     }
+    /*----- content#02 -----*/
     .left{
         position: static;
         min-width: 20%;
@@ -454,23 +478,36 @@ footer p{
         justify-items: center;
         align-items: center;
     }
+    /*----- content#03 -----*/
+    .club-introduction .icon{
+        max-width: 4vw;
+        max-height: 4vw;
+    }
+    .club-introduction h3{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
     .text.club-introduction{
         max-width: 90%;
-        font-size: 1rem;
+        font-size: 1.5rem;
+        padding:  0 2vw 3vw;
     }
+    /*----- content#04 -----*/
     .development-introduction{
         flex-flow: column;
     }
     .development-introduction .text{
+        font-size: 1.75rem;
         min-width: 65%;
         max-width: 100%;
+    }
+    .development-introduction .text h3{
+        font-size: 1.9rem;
     }
     .slider{
         max-width: 45%;
     }
-    .l, .r{
-        order: 0;
-    }
+    /*----- content#05 -----*/
     .others{
         flex-flow: column;
         justify-items: center;
@@ -485,6 +522,7 @@ footer p{
     .sns iframe{
         max-width:100%;
     }
+    /*----- header -----*/
     #nav-content{
         width: 75%;
     }
@@ -494,5 +532,20 @@ footer p{
     .nav-item a {
         font-size: 14px;
         padding: 5px;
+    }
+    /*----- footer -----*/
+    footer h1{
+        font-size: 2.4rem;
+    }
+    footer p{
+        font-size: 1.5rem;
+    }
+    .twitter-box{
+        width: 4rem;
+        height: 4rem;
+    }
+    .lab{
+        margin: 0.5rem;
+        font-size: 3rem;
     }
 }
