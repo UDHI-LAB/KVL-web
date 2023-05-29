@@ -6,19 +6,22 @@ html{
 /*全体の位置調整*/
 body{
     margin: 0;
-  }
-
-  .wrapper{
-    max-width: 80%;
-    margin: 5% auto 0; /*中央に配置*/
-    padding: 0 4%; /*スマホ向けの調整*/
 }
+
+/*アイコンの基本設定*/
+.icon{
+    max-width: 2.2vw;
+    max-height: 2.2vw;
+    vertical-align: middle;
+    margin: 0 0.5% 0 0.2%;
+}
+
 /*---------- フッターの各種設定 ----------*/
 
 /*フッターの位置等調整*/
 footer {
     width: 100%;
-    background: #555;
+    background: #444;
     text-align: center;
     color: #fff;
     padding-bottom: 2vw;
@@ -30,12 +33,7 @@ footer h1{
 footer p{
     margin: 1.25%;
 }
-footer img{
-    max-width: 2.2vw;
-    max-height: 2.2vw;
-    vertical-align: middle;
-    margin: 0 0.5% 0 0.2%;
-}
+/*Twitterのアイコン*/
 .twitter-box{
     background: #fff;
     border-radius: 50%;
@@ -44,11 +42,30 @@ footer img{
     margin: 0 auto;
 }
 .lab{
-    color: #555;
+    color: #444;
     margin: 0.25rem;
     font-size: 2rem;
     border-radius: 0%;
 }
 .twitter-box:hover{
     cursor: pointer;
+}
+
+/*---------- モバイル版 ----------*/
+@media(max-width: 768px){
+    /*----- footer -----*/
+    footer h1{
+        font-size: 2.4rem;
+    }
+    footer p{
+        font-size: 1.5rem;
+    }
+    .twitter-box{
+        width: 4rem;
+        height: 4rem;
+    }
+    .lab{
+        margin: 0.5rem;
+        font-size: 3rem;
+    }
 }
