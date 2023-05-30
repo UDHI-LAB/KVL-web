@@ -3,10 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>KimIToMIKU</title>
+    <meta name="description" content=""><!--検索時の説明文(仮置き)-->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/"><!--ファビコン(仮置き)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
@@ -37,7 +40,7 @@
                 <h4><img class="icon" src="images/syoriken-icon.webp">shoriken × <img class="icon" src="images/UDHI-LAB-icon.svg">UDHI-LAB</h4>
                 <h1>ここに<br>テーマが入る。</h1>
             </div>
-        </div>
+        </div><!--content#00-->
 
         <div class="content gray" id="01">
             <h2>Information</h2>
@@ -60,7 +63,7 @@
                 <div class="row"><h3>入場料</h3><h2>無料</h2></div>
                 <h3><i class="las la-map-marker"></i>  北見工業大学 講堂</h3>
             </div>
-        </div><!--content-->
+        </div><!--content#01-->
 
         <div class="content" id="02">
             <h2>What is KimIToMIKU ?</h2>
@@ -79,7 +82,7 @@
                         KimIToMIKUの説明 KimIToMIKUの説明
                     </p>
                 </div>
-        </div><!--content-->
+        </div><!--content#02-->
 
         <div class="content gray" id="03">
             <h2>What is syoriken & UDHI-LAB ?</h2> 
@@ -104,7 +107,7 @@
                 </p>
                 <a class="site-link" href="https://udhi-lab.com/" target="_blank">UDHI-LAB 公式サイト</a>
             </div>
-        </div><!--content-->
+        </div><!--content#03-->
         
         <div class="content" id="04">
             <h2>Introduction of Development Division</h2>
@@ -164,7 +167,7 @@
                     </p>
                 </div>
             </div>
-        </div><!--content-->
+        </div><!--content#04-->
 
         <div class="content gray bottom" id="05">
             <h2>Others</h2>
@@ -176,11 +179,11 @@
                     <p>(↑KimIToMIKU ポスター)</p>
                 </div>
                 <div class="sns l">
-                    <a class="twitter-timeline"  data-height="320" href="https://twitter.com/KimIToMIKU?ref_src=twsrc%5Etfw">Tweets by KimIToMIKU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <div id="tl-area"></div><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <p>(↑広報Twitter)</p>
                 </div>
             </div>
-        </div><!--content-->
+        </div><!--content#05-->
 
     </div><!--contents-->
     
@@ -188,8 +191,7 @@
         <h1>KimIToMIKU</h1>
         <p>主催：<img class="icon" src="images/syoriken-icon.webp">shoriken × <img class="icon" src="images/UDHI-LAB-icon.svg">UDHI-LAB</p>
         <p>Share</p>
-        <div class="twitter-box"><a href="https://twitter.com/share?" rel="nofollow noopener" target="_blank"><i class="lab la-twitter"></i></a></div>
-        <p>ライセンス等の表記</p>
+        <div class="twitter-box" id="share-area"></div>
         <small>&copy;Copyright</small>
     </footer>
 
@@ -197,5 +199,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/close-menu.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/share-tweet.js"></script>
+    <script src="js/TL-height.js"></script>
 </body>
 </html>
