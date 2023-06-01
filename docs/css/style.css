@@ -205,6 +205,10 @@ body{
     margin: 1vw 0;
     font-size: 1.1rem;
 }
+/*一言コメント欄*/
+.development-introduction .text strong{
+    font-size: 1rem;
+}
 /*flexで配置*/
 .development-introduction{
     display: flex;
