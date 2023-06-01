@@ -154,6 +154,7 @@ body{
     right: 5%;
     text-align: center;
     padding: 2vw 0;
+	font-size: 1rem
 }
 
 /*----- content#03 -----*/
@@ -203,10 +204,13 @@ body{
 .development-introduction .text h3{
     padding-top: 2vw;
     margin: 1vw 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 /*一言コメント欄*/
 .development-introduction .text strong{
+    font-size: 1.1rem;
+}
+.development-introduction .text{
     font-size: 1rem;
 }
 /*flexで配置*/
