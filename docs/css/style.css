@@ -2,6 +2,8 @@
 html{
     font-size: 1.6vw;/*基準サイズ(横幅1000pxで1文字16pxになる)*/
     scroll-padding-top: 55px;/*ページ内リンクのずれ補正用*/
+
+    font-family: Meirio, sans-serif;
 }
 /*位置調整*/
 body{
