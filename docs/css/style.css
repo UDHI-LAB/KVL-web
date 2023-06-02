@@ -154,6 +154,7 @@ body{
     right: 5%;
     text-align: center;
     padding: 2vw 0;
+	font-size: 1rem
 }
 
 /*----- content#03 -----*/
@@ -161,10 +162,10 @@ body{
 /*テキストボックスの設定*/
 .text.club-introduction{
     background: #fff;
-    max-width: 70%;
+    max-width: 75%;
     margin: 0 auto 3vw;
     padding-bottom: 3vw;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 /*アイコンを少し大きめにする*/
 .club-introduction .icon{
@@ -203,7 +204,14 @@ body{
 .development-introduction .text h3{
     padding-top: 2vw;
     margin: 1vw 0;
+    font-size: 1.2rem;
+}
+/*一言コメント欄*/
+.development-introduction .text strong{
     font-size: 1.1rem;
+}
+.development-introduction .text{
+    font-size: 1rem;
 }
 /*flexで配置*/
 .development-introduction{
