@@ -1,6 +1,6 @@
 // シェアボタンのリンク先
 let shareUrl  = 'https://twitter.com/intent/tweet';
-    shareUrl += '?text='+encodeURIComponent('ツイート内容テキスト');
+    shareUrl += '?text='+encodeURIComponent(''); //ここにツイート内容のテキストを入れる
     shareUrl += '&url='+encodeURIComponent(location.href);
  
 // シェアボタン追加

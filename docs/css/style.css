@@ -395,6 +395,10 @@ header {
     margin-top: 2vw;
     max-width: 30%;
 }
+.slick-track {
+	display: flex;
+	align-items: center;
+}
 /*------ スライダー画像 ------*/
 .slick-slide img{
     width: 100%;
