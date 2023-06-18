@@ -1,0 +1,169 @@
+/*----- 共通設定 -----*/
+html{
+    font-size: 1.6vw;/*基準サイズ(横幅1000pxで1文字16pxになる)*/
+    scroll-padding-top: 55px;/*ページ内リンクのずれ補正用*/
+
+    font-family: Meirio, sans-serif;
+}
+/*位置調整*/
+body{
+    margin: 0;
+}
+/*一番上のコンテンツがヘッダーと被らないように調整*/
+.contents{
+    padding-top: 50px;
+}
+/*コンテンツの位置調整用*/
+.content{
+    padding-top: 1.5vw;
+}
+/*余白をつけ、中央に配置*/
+.wrapper{
+    max-width: 80%;
+    margin: 5% auto 0; /*中央に配置*/
+    padding: 0 4%; /*スマホ向けの調整*/
+}
+/*見出しのサイズと位置*/
+.content h2{
+    margin: 1vw 0;
+    padding-left: 10%;
+    font-size: 2rem;
+}
+/*テキストボックスの基本設定*/
+.text{
+    background: #eee;
+    padding: 0 1vw;
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+.contents {
+    width: 67%;
+    margin: 20px auto 0 auto;
+    text-align: center; 
+}
+
+.qa_container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px 45px;
+    border-radius: 12px;
+    box-shadow: 3px rgba(0, 0, 0, 0.238);
+    background-color: rgb(242, 240, 240);
+}
+
+.question {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: solid 1px gray;
+}
+
+.question h1 {
+    margin-right: 10px;
+    color: #87cefa;
+}
+
+.answer {
+    display: flex;
+    padding-top: 20px;
+}
+
+.answer h1 {
+    margin-right: 10px;
+    color: #fa8787;
+}
+
+/*---------- ヘッダーの各種設定 ----------*/
+
+/*ヘッダーの位置等調整*/
+header {
+    position: absolute;
+    z-index: 9999;
+}
+.header-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding:10px 0;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+/*ヘッダーロゴの位置調整*/
+.header-logo{
+    text-align:left;
+    font-size: 20px;
+    margin:0 20px;
+    color: #000;
+    text-decoration: none;
+}
+.header-logo h3{
+    margin: 0;
+}
+
+/*アイコンの基本設定*/
+.icon{
+    max-width: 2.2vw;
+    max-height: 2.2vw;
+    vertical-align: middle;
+    margin: 0 0.5% 0 0.2%;
+}
+
+/*---------- フッターの各種設定 ----------*/
+
+/*フッターの位置等調整*/
+footer {
+    width: 100%;
+    background: #444;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 2vw;
+}
+footer h1{
+    margin: 0;
+    padding-top: 4.5%;
+}
+footer p{
+    margin: 1.25%;
+}
+/*Twitterのアイコン*/
+.twitter-box{
+    background: #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto;
+}
+.lab{
+    color: #444;
+    margin: 0.25rem;
+    font-size: 2rem;
+}
+.twitter-box:hover{
+    cursor: pointer;/*マウスカーソルを指マークに*/
+}
+
+/* スマホよりも大きい画面 */
+@media screen and (max-width: 960px) {
+    .qa_container {
+        width: 80%;
+        padding: 20px 20px;
+    }
+
+    #message_contents {
+        display: block;
+    }
+
+    .text_container {
+        width: 80%;
+        height: fit-content;
+        margin: 0 auto 20px auto;
+    }
+    
+    #image {
+        width: 100%;
+        margin: 0;
+    }
+}
