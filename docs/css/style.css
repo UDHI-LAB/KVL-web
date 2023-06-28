@@ -93,7 +93,6 @@ body{
 .info{
     display: grid;/*グリッドで配置*/
     grid-template-columns: 1fr 1fr;
-    gap: 3%;
 }
 /*文字の位置等調整*/
 .date h2{
@@ -114,21 +113,21 @@ body{
 .info small{
     font-size: 0.9rem;
 }
-/*グリッド内でグリッド配置*/
+
 .row{
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     align-items: center;
 }
+
 .row h2{
     font-size: 2rem;
     margin: 0;
 }
-/*マップピンのアイコン*/
+
 .info i{
     color: #000;
 }
-
 
 /*----- content#02 -----*/
 
