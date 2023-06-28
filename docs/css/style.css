@@ -91,7 +91,8 @@ body{
     margin-top: 0;
 }
 .info{
-    gap: 3%;
+    display: grid;/*グリッドで配置*/
+    grid-template-columns: 1fr 1fr;
 }
 /*文字の位置等調整*/
 .date h2{
@@ -113,9 +114,19 @@ body{
     font-size: 0.9rem;
 }
 
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+}
+
 .row h2{
     font-size: 2rem;
     margin: 0;
+}
+
+.info i{
+    color: #000;
 }
 
 /*----- content#02 -----*/
